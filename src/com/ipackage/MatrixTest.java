@@ -40,7 +40,7 @@ public class MatrixTest {
             e.printStackTrace();
         }
 
-        String [][] matrixa = new String[mx][my] ;//T矩阵
+        String [][] matrixa = new String[mx][my] ;//T矩阵，光谱筛响应矩阵
         int i = 0 ;
         int j = 0 ;
         int ix = 0 ;
@@ -81,7 +81,7 @@ public class MatrixTest {
 //        for( int m = 0 ; m < mx ; m++ )
 //            System.out.println( Arrays.toString( matrixa[m] ) );
 
-        String[] matrixb = new String[mx] ;//I矩阵
+        String[] matrixb = new String[mx] ;//I矩阵，光谱向量
         try(BufferedReader inb = Files.newBufferedReader( Paths.get( path_ ) ) ;)
         {
             String str = "" ;
@@ -103,7 +103,7 @@ public class MatrixTest {
 //        System.out.println( Arrays.toString( matrixb ) );
 
 
-        String[] matrixc = new String[mx] ;//e矩阵
+        String[] matrixc = new String[mx] ;//e矩阵，响应向量
 
         BigDecimal aa = null;
         BigDecimal bb = null ;
